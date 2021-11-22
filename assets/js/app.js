@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded",function () {
     const container = document.getElementById("container");
     let width = 10;
     let cases = [];
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const isLeftEdge = (currentId % width === 0);
         const isRightEdge = (currentId % width === width -1);
 
-        setTimeout(() => {
+        setTimeout(function () {
             if (currentId > 0 && !isLeftEdge) {
                 const newId = cases[parseInt(currentId) -1].id;
                 const newSquare = document.getElementById(newId);

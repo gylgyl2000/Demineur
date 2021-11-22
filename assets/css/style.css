@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+}
+
+h1 {
+    width: 100%;
+    color: black;
+    font-size: 5rem;
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+h2 {
+    width: 100%;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+}
+
+#result {
+    font-size: 3rem;
+}
+
+#container {
+    width: 60rem;
+    height: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+}
+
+#container div {
+    width: 6rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    border-style: outset;
+}
+
+.checked {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+#container_rules {
+    width: 30%;
+    border-right: 0.1rem solid black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+p {
+    color: black;
+}
+
+#rules {
+    font-size: 1.5rem;
+}
+
+#good_luck {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 5rem;
+}
+
+h3 {
+    color: black;
+    text-align: center;
+    text-decoration-line: underline;
+    font-size: 2rem;
+}
+
+#again {
+    display: none;
+    text-decoration-line: none;
+    color: red;
+    border: 0.1rem solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+

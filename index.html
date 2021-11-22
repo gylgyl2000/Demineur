@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Démineur</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <h1>Démineur</h1>
+
+    <div id="container_rules">
+
+        <h3>Règles du jeu</h3>
+
+        <p id="rules">
+            Chaque case de la grille peut soit cacher une mine, soit être vide. Le but du jeu est de
+            découvrir toutes les cases libres sans faire exploser les mines, c'est-à-dire sans cliquer sur les
+            cases qui les dissimulent. Lorsque le joueur clique sur une case libre comportant au moins une mine
+            dans l'une de ses cases avoisinantes, un chiffre apparaît, indiquant ce nombre de mines. Si en revanche
+            toutes les cases adjacentes sont vides, une case vide est affichée et la même opération est répétée sur
+            ces cases, et ce jusqu'à ce que la zone vide soit entièrement délimitée par des chiffres. En comparant
+            les différentes informations récoltées, le joueur peut ainsi progresser dans le déminage du terrain.
+            S'il se trompe et clique sur une mine, il a perdu. On peut signaler les cases contenant des mines
+            présumées par un drapeau en cliquant sur le bouton droit de la souris — mais ce n'est aucunement
+            obligatoire. Il faut faire attention à ne pas signaler une case saine par un drapeau, car cela peut induire
+            en erreur ; ce n'est toutefois pas aussi pénalisant que de découvrir une mine.
+        </p>
+
+        <p id="good_luck">
+            Bonne chance !
+        </p>
+
+    </div>
+
+    <div id ="container"></div>
+
+    <h2>Drapeaux restant : <span id="flags-left"></span></h2>
+
+    <h2 id="result"></h2>
+
+    <a href="index.html" id="again">Recommencer</a>
+
+    <script src="/assets/js/app.js"></script>
+</body>
+</html>
